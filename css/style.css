@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+body, div, ul, li, span {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Lato, Arial, sans-serif;
+}
+
+body {
+    background: #3f4352 url("../images/main-bg.jpg") 50% no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.tabs {
+    box-shadow: 0 23px 57px 0 rgba(0, 0, 0, 0.4);
+    width: 600px;
+    height: 541px;
+    margin: 142px auto;
+    background-color: #212534;
+}
+
+.tabs__caption {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+    height: 115px;
+    margin: 0;
+    padding: 0 52px 0 52px;
+    background-color: #2b3040;
+}
+
+.tabs__caption li {
+    opacity: 0.7;
+    padding: 35px 8px 8px 20px;
+    text-align: center;
+    display: block;
+    width: 148px;
+    height: 100%;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    cursor: pointer;
+}
+
+li.active {
+    border-bottom: 2px solid #fff;
+    opacity: 1;
+}
+
+.tabs__content {
+    padding: 58px 35px;
+}
+
+.tabs__content {
+    display: none;
+    /* ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О ╨┐╤А╤П╤З╨╡╨╝ ╨▓╤Б╨╡ ╨▒╨╗╨╛╨║╨╕ ╨Ь╨Ш╨Э╨Ш╨Ь╨Р╨Ы╨м╨Э╨л╨Х ╨б╨в╨Ш╨Ы╨Ш ╨Ф╨Ы╨п JS TABS*/
+}
+
+.tabs__content.active {
+    display: block;
+    /* ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О ╨┐╨╛╨║╨░╨╖╤Л╨▓╨░╨╡╨╝ ╨╜╤Г╨╢╨╜╤Л╨╣ ╨▒╨╗╨╛╨║ ╨Ь╨Ш╨Э╨Ш╨Ь╨Р╨Ы╨м╨Э╨л╨Х ╨б╨в╨Ш╨Ы╨Ш JS TABS*/
+    border-bottom-color: #fff;
+}
+
+.game-info--left {
+    float: left;
+    width: 162px;
+}
+
+.game-info__ratio {
+    background-image: url(../images/star-grey.png);
+    width: 150px;
+    height: 18px;
+    margin: auto;
+}
+
+.ratio__yellow-stars {
+    width: 50%;
+    height: 100%;
+    background-image: url(../images/star-yellow.png);
+}
+
+.game-info--right {
+    float: right;
+    padding-left: 40px;
+    text-align: left;
+    position: relative;
+    width: 360px;
+}
+
+.game__ratio--circle-outside {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+    background-color: transparent;
+    background-image: linear-gradient(145deg, transparent 50%, #13e28d 50%), linear-gradient(90deg, transparent 50%, #13e28d 50%);
+}
+
+.game__ratio--circle-inside {
+    border-radius: 50%;
+    margin: 4px;
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    line-height: 64px;
+    background-color: #212534;
+    color: #aaadbc;
+    font-size: 20px;
+}
+
+.block-for-circle {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    height: 66px;
+    width: 66px;
+    border-radius: 50%;
+    border: 2px solid #b7bacd;
+}
+
+.game__name {
+    font-size: 32px;
+    margin-top: 5px;
+}
+
+.game__date {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.game__dscr {
+    margin-bottom: 45px;
+    color: #b7bacd;
+    margin-top: 43px;
+    line-height: 22px;
+}
+
+.game__block-price, .buy__btn {
+    display: inline-block;
+}
+
+.buy__btn {
+    border-radius: 2px;
+    background-color: #13e28d;
+    width: 164px;
+    height: 55px;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    font-weight: 700;
+}
+
+.buy__btn:hover {
+    outline: none;
+    color: #2b3040;
+    background-color: #b7bacd;
+}
+
+.buy__btn:active {
+    margin-top: 2px;
+}
+
+.game__price-off {
+    font-weight: 700;
+    color: #fedd3f;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.game__price {
+    font-size: 32px;
+}
+
+.flex-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */
